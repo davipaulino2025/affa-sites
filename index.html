@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Affa Programação de Sites</title>
+
+<meta name="description" content="Centro Terapêutico Zen House, Especializado em Tratamento de Saúde Mental, Alcoolismo e Dependência Química. Oferecemos abordagens personalizadas em um ambiente acolhedor, com profissionais dedicados a apoiar a recuperação eficaz e duradoura.">
+<meta name="keywords" content="clinica de recuperação, tratamento alcoolismo, dependência química, saúde mental, centro de reabilitação, cabreuva, mairiporã, jundiai, são paulo, clinica de recuperação estado de são paulo, clinicas em são paulo para usuário de drogas, farmacodependente">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.zenhousecentroterapeutico.com.br">
+<meta property="og:title" content="Zen House Centro Terapêutico Reabilitação de Dependência Quimica Alcoolismo e Saúde Mental"> <meta property="og:description" content="Centro Terapêutico Zen House, Especializado em Tratamento de Saúde Mental, Alcoolismo e Dependência Química. Oferecemos abordagens personalizadas em um ambiente acolhedor, com profissionais dedicados a apoiar a recuperação eficaz e duradoura.">
+<meta property="og:image" content="https://scontent-gru1-2.xx.fbcdn.net/v/t39.30808-1/518278168_122121973358899507_6841032382446094041_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=oOpsJBjp_JsQ7kNvwEGydOV&_nc_oc=Adk3KYSA3PCPBq7O7TySsPcmY8rEyPdenKsrGjIinrFCX-W4aKsJS5tCymIX7c5DEgo&_nc_zt=24&_nc_ht=scontent-gru1-2.xx&_nc_gid=-176KUK4dFutrrpEN09XVQ&oh=00_AfX9SK5v0QUccxIXRGJmWxq2j-7CNJlOOF30jvKlQ&oe=68A0B344" />
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+
+<style>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(90deg, #ff6600, #ff3300);
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.logo-animada {
+    animation: zoomFrenteTras 2s infinite ease-in-out;
+    height: 50px;
+    width: 50px;
+}
+ footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+/* Menu */
+nav {
+    margin-top: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffdd99;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== HERO ===== */
+.hero {
+    background-image: url('FOTOS/imagem_1.jfif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    padding: 60px 15px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+    display: inline-block;
+    background: #ff6600;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: #cc5200;
+}
+
+/* ===== SEÇÕES ===== */
+section {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== FORM ===== */
+.form-container {
+    max-width: 600px;
+    background: #ff33007c;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group-inline {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.form-group-inline .form-group {
+    flex: 1 1 100%;
+}
+
+.btn-enviar {
+    background: none;
+    border: 2px solid #001f60;
+    color: #001f60;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-enviar:hover {
+    background: #001f60;
+    color: white;
+}
+
+/* ===== WHATSAPP FLOAT ===== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.6);
+    z-index: 1000;
+    animation: explode 0.8s forwards, pulse 0.6s infinite ease-in-out 0.8s;
+}
+
+.whatsapp-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* ===== ANIMAÇÕES ===== */
+@keyframes zoomFrenteTras {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes explode {
+    0% { transform: scale(0); opacity: 0; }
+    70% { transform: scale(1.3); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .services {
+        grid-template-columns: 1fr;
+    }
+    .form-group-inline {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+ /* Animações */
+        h2.explode {
+            position: relative;
+            font-size: 2.5rem;
+            font-weight: 200;
+            color: #ffffff;
+            letter-spacing: 0.05em;
+            animation: explode-glow 3s ease-in-out infinite alternate;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adicionado para melhor contraste */
+        }
+
+        @keyframes explode-glow {
+            0% {
+                text-shadow:
+                    0 0 3px #ff6600f1,
+                    0 0 6px #ff6600,
+                    0 0 9px #ff660080;
+                color: #ff6600;
+            }
+            50% {
+                text-shadow:
+                    0 0 5px #ff9900,
+                    0 0 10px #ff9900;
+                color: #ff9900;
+            }
+            100% {
+                text-shadow:
+                    0 0 3px #ff6600f1,
+                    0 0 6px #ff6600,
+                    0 0 9px #ff660080;
+                color: #ff6600;
+            }
+        }
+
+        h2.explode::before,
+        h2.explode::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 120%;
+            height: 120%;
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%) scale(0);
+            opacity: 0.4;
+            box-shadow:
+                0 -20px 5px #ff6600,
+                15px -15px 5px #ff9900,
+                20px 0 5px #ff6600,
+                15px 15px 5px #ff9900fd,
+                0 20px 5px #ff6600,
+                -15px 15px 5px #ff9900fd,
+                -20px 0 5px #ff6600fb,
+                -15px -15px 5px #ff9900;
+            animation: explode-particles 3s ease-out infinite;
+        }
+
+        h2.explode::after {
+            animation-delay: 1.5s;
+        }
+
+        @keyframes explode-particles {
+            0% {
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 0.4;
+            }
+            70% {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 0;
+            }
+        }
+ .laranja-com-contorno {
+            color: #ffffff;
+            font-size: 3rem;
+            font-weight: 800;
+            text-shadow:
+                -1px -1px 0 #00000085,
+                1px -1px 0 #00000083,
+                -1px 1px 0 #02020191,
+                1px 1px 0 #00000088,
+                0 0 2px #0000008c;
+        }
+         @supports (-webkit-text-stroke: 1px #df6c018e) {
+            .laranja-com-contorno {
+                -webkit-text-stroke: 1px #df6c0185;
+                text-shadow: none;
+            }
+        }
+        .hero h2.laranja-com-contorno {
+    font-size: 2.0rem; /* aumenta o título */
+    font-weight: bold;
+}
+
+.hero p.laranja-com-contorno {
+    font-size: 1.5rem; /* aumenta os parágrafos */
+    line-height: 1.6;  /* dá mais espaçamento */
+}
+
+.hero .btn {
+    font-size: 1.2rem; /* botão mais chamativo */
+    padding: 12px 24px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>
+        <br>
+        <img src="FOTOS/logo-affa_11.png" alt="Logo" class="logo-animada">
+        Affa Programação de Sites
+    </h1>
+    <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2 class="laranja-com-contorno">Criamos Sites Incríveis para o Seu Negócio</h2>
+    <p class="laranja-com-contorno">Sites modernos, rápidos, responsivos e otimizados para atrair mais clientes e aumentar suas vendas.</p>
+    <p class="laranja-com-contorno">Entre em contato conosco!</p>
+    <a href="#contato" class="btn">Solicitar Orçamento</a>
+</section>
+
+<section id="servicos">
+    <br><br><br>
+    <h2 class="explode">Nossos Serviços</h2>
+    <div class="services">
+         <div class="services">
+            <div class="service">
+                <img src="FOTOS/imagem_2.jpg" alt="Criação de Sites" />
+                <h3> <strong>Criação de Sites</strong></h3>
+                <p style="font-size: 20px; line-height: 1.6;">
+                <strong>Desenvolvimento de sites profissionais sob medida para seu negócio.</strong></p>
+            </div>
+            <div class="service">
+                <img src="FOTOS/imagem_3.jpg" alt="Lojas Virtuais" />
+                <h3> <strong>Lojas Virtuais</strong></h3>
+                <p style="font-size: 20px; line-height: 1.6;">
+                <strong>E-commerce completo para vender seus produtos online com facilidade.</strong></p>
+            </div>
+            <div class="service">
+                <img src="FOTOS/imagem_4.jfif" alt="SEO e Marketing Digital" />
+                <h3><strong>SEO e Marketing Digital</strong></h3>
+                <p style="font-size: 20px; line-height: 1.6;">
+                <strong>Otimização e estratégias para melhorar sua presença online e atrair mais clientes.</strong></p>
+            </div>
+            <div class="service">
+                <img src="FOTOS/consultoria-em-hospedagem_6.jpg" alt="Consultoria em Tecnologia" />
+                <h3><strong>Consultoria em Tecnologia</strong></h3>
+                <p style="font-size: 20px; line-height: 1.6;">
+                <strong>Análise e recomendação de soluções tecnológicas personalizadas para otimizar seu negócio.</strong></p>
+            </div>
+            <div class="service">
+                <img src="FOTOS/suporte-de-hospedagem_5.png" alt="Suporte de Hospedagem" />
+                <h3><strong>Suporte de Hospedagem e Manutenção de Sites</strong></h3>
+                <p style="font-size: 20px; line-height: 1.6;">
+                <strong>Serviço de hospedagem segura, suporte técnico e atualização para garantir o funcionamento perfeito do seu site.</strong></p>
+            </div>
+            <div class="service">
+                <img src="FOTOS/Reputacao-Online_8.png" alt="Gestão de Reputação Online" />
+                <h3><strong>Gestão de Reputação Online</strong></h3>
+                <p style="font-size: 20px; line-height: 1.6;">
+                <strong>Monitoramento e resposta a avaliações para fortalecer a imagem da empresa.</strong></p>
+            </div>
+            <div class="service">
+                <img src="FOTOS/seguranca-e-protecao_7.jpg" alt="Segurança e Proteção de Dados" />
+                <h3><strong>Segurança e Proteção de Dados</strong></h3>
+                <p style="font-size: 20px; line-height: 1.6;">
+                <strong>Implementação de medidas para proteger sites e informações confidenciais.</strong></p>
+            </div>
+            <div class="service">
+                <img src="FOTOS/copywriting-persuasivo_7.png" alt="Copywriting Persuasivo" />
+                <h3><strong>Copywriting Persuasivo</strong></h3>
+                <p style="font-size: 20px; line-height: 1.6;">
+                <strong>Redação de textos estratégicos para aumentar conversões e vendas.</strong></p>
+            </div>    
+    </div>
+</section>
+
+<section id="sobre" style="background-color: #ffeedd;">
+        <br><br>
+        <h2 class="explode">Sobre Nós</h2>
+        <p style="font-size: 30px; line-height: 1.6;">
+            Na <strong>Affa Programação de Sites</strong>, transformamos ideias em experiências digitais memoráveis. 
+            Não apenas desenvolvemos sites, criamos plataformas que encantam, engajam e geram resultados reais. 
+            Nosso compromisso é elevar sua presença online a um novo patamar, tornando-a uma poderosa ferramenta 
+            para atrair clientes, fortalecer sua marca e impulsionar seus negócios. Cada detalhe é pensado para que 
+            sua empresa se destaque e conquiste o espaço que merece no mundo digital.
+        </p>
+    </section>
+<section id="contato">
+    <div class="form-container">
+        <h2>Entre em contato!</h2>
+        <p>Sinta-se à vontade para entrar em contato para qualquer dúvida.</p>
+        <form action="https://formsubmit.co/davi_dpds@hotmail.com" method="POST">
+            <div class="form-group-inline">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" name="telefone" id="telefone" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" rows="4" required></textarea>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="obrigado.html">
+            <button type="submit" class="btn-enviar">ENVIAR</button>
+        </form>
+    </div>
+</section>
+
+<!-- Botão WhatsApp flutuante -->
+<a href="https://wa.me/5511961986899" target="_blank" class="whatsapp-float">
+    <img src="FOTOS/bater-papo_10.png" alt="WhatsApp" class="whatsapp-icon">
+</a>
+
+<footer>
+    <p>&copy; 2025 Affa Programação de Sites. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
