@@ -1,94 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obrigado - Affa Programação de Sites</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Obrigado - Affa Programação de Sites</title>
 
-    <meta name="description" content="Centro Terapêutico Zen House, Especializado em Tratamento de Saúde Mental, Alcoolismo e Dependência Química. Oferecemos abordagens personalizadas em um ambiente acolhedor, com profissionais dedicados a apoiar a recuperação eficaz e duradoura.">
-    <meta name="keywords" content="clinica de recuperação, tratamento alcoolismo, dependência química, saúde mental, centro de reabilitação, cabreuva, mairiporã, jundiai, são paulo, clinica de recuperação estado de são paulo, clinicas em são paulo para usuário de drogas, farmacodependente">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.zenhousecentroterapeutico.com.br">
-    <meta property="og:title" content="Zen House Centro Terapêutico Reabilitação de Dependência Quimica Alcoolismo e Saúde Mental">
-    <meta property="og:description" content="Centro Terapêutico Zen House, Especializado em Tratamento de Saúde Mental, Alcoolismo e Dependência Química. Oferecemos abordagens personalizadas em um ambiente acolhedor, com profissionais dedicados a apoiar a recuperação eficaz e duradoura.">
-    <meta property="og:image" content="https://scontent-gru1-2.xx.fbcdn.net/v/t39.30808-1/518278168_122121973358899507_6841032382446094041_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=oOpsJBjp_JsQ7kNvwEGydOV&_nc_oc=Adk3KYSA3PCPBq7O7TySsPcmY8rEyPdenKsrGjIinrFCX-W4aKsJS5tCymIX7c5DEgo&_nc_zt=24&_nc_ht=scontent-gru1-2.xx&_nc_gid=-176KUK4dFutrrpEN09XVQ&oh=00_AfX9SK5v0QUccxIXRGJmWxq2j-7CNJlOOF30jvKlQ&oe=68A0B344" />
+<meta name="description" content="Centro Terapêutico Zen House, Especializado em Tratamento de Saúde Mental, Alcoolismo e Dependência Química.">
+<meta name="keywords" content="clinica de recuperação, tratamento alcoolismo, dependência química, saúde mental, centro de reabilitação">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.zenhousecentroterapeutico.com.br">
+<meta property="og:title" content="Zen House Centro Terapêutico">
+<meta property="og:description" content="Centro Terapêutico Zen House, Especializado em Tratamento de Saúde Mental, Alcoolismo e Dependência Química.">
+<meta property="og:image" content="https://scontent-gru1-2.xx.fbcdn.net/v/t39.30808-1/518278168_122121973358899507_6841032382446094041_n.jpg" />
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #FFA500;
+    }
 
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #FFA500; /* Fundo laranja */
-        }
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
 
-        main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            text-align: center;
-        }
+    h1 {
+        font-size: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: white;
+    }
 
+    h1 span {
+        display: inline-block;
+        animation: bounce 0.6s ease infinite;
+    }
+
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .botao-voltar {
+        margin: 20px auto;
+        padding: 15px 25px;
+        font-size: 18px;
+        color: white;
+        background-color: #ff6600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        display: inline-block;
+    }
+
+    .botao-voltar:hover {
+        background-color: #e65c00;
+    }
+
+    footer {
+        background: #222;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    /* Ajustes para mobile */
+    @media (max-width: 768px) {
         h1 {
-            font-size: 3rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            color: white;
+            font-size: 2rem;
         }
-
-        h1 span {
-            display: inline-block;
-            animation: bounce 0.6s ease infinite;
-        }
-
-        /* Animação de pulo */
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-
         p {
-            font-size: 1.2rem;
-            color: white;
-            margin-top: 10px;
+            font-size: 1rem;
         }
+        .botao-voltar {
+            font-size: 16px;
+            padding: 12px 20px;
+        }
+    }
 
-        footer {
-            background: #222;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 0.9rem;
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 1.6rem;
         }
-    </style>
+        p {
+            font-size: 0.95rem;
+        }
+        .botao-voltar {
+            font-size: 14px;
+            padding: 10px 18px;
+        }
+    }
+</style>
 </head>
 <body>
-    <main>
-        <h1 id="animated-text">Obrigado por nos contatar!</h1>
-        <p>Nossa equipe da Affa Programação de Sites entrará em contato com você em breve.</p>
-    </main>
 
-    <footer>
-        <p>&copy; 2025 Affa Programação de Sites. Todos os direitos reservados.</p>
-    </footer>
+<main>
+    <h1 id="animated-text">Obrigado por nos contatar!</h1>
+    <p>Nossa equipe da Affa Programação de Sites entrará em contato com você em breve.</p>
+    <a href="index.html" class="botao-voltar">Voltar à Página Inicial</a>
+</main>
+
+<footer>
+    <p>&copy; 2025 Affa Programação de Sites. Todos os direitos reservados.</p>
+</footer>
 
 <script>
 const h1 = document.getElementById("animated-text");
 const text = h1.textContent;
 h1.textContent = "";
 
-// Envolve cada letra em um span e aplica delay incremental
 text.split("").forEach((char, index) => {
     const span = document.createElement("span");
     span.textContent = char;
